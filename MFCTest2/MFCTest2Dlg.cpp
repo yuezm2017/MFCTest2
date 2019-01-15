@@ -10,8 +10,7 @@
 #ifdef _DEBUG
 #define new DEBUG_NEW
 #endif
-
-
+#include <string>
 // CAboutDlg dialog used for App About
 
 class CAboutDlg : public CDialogEx
@@ -150,4 +149,3 @@ HCURSOR CMFCTest2Dlg::OnQueryDragIcon()
 {
 	return static_cast<HCURSOR>(m_hIcon);
 }
-
