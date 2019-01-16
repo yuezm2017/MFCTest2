@@ -155,6 +155,6 @@ HCURSOR CMFCTest2Dlg::OnQueryDragIcon()
 void CMFCTest2Dlg::OnBnClickedOk()
 {
 	// TODO: Add your control notification handler code here
-	AfxMessageBox(_T("1"));//实现Button Click事件。2019.01.16 YZM
+	AfxMessageBox(_T("222"));//脢碌脧脰Button Click脢脗录镁隆拢2019.01.16 YZM
 	CDialogEx::OnOK();
 }
