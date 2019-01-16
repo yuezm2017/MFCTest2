@@ -62,6 +62,7 @@ BEGIN_MESSAGE_MAP(CMFCTest2Dlg, CDialogEx)
 	ON_WM_SYSCOMMAND()
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
+	ON_BN_CLICKED(IDOK, &CMFCTest2Dlg::OnBnClickedOk)
 END_MESSAGE_MAP()
 
 
@@ -148,4 +149,12 @@ void CMFCTest2Dlg::OnPaint()
 HCURSOR CMFCTest2Dlg::OnQueryDragIcon()
 {
 	return static_cast<HCURSOR>(m_hIcon);
+}
+
+
+void CMFCTest2Dlg::OnBnClickedOk()
+{
+	// TODO: Add your control notification handler code here
+	AfxMessageBox(_T("1"));//实现Button Click事件。2019.01.16 YZM
+	CDialogEx::OnOK();
 }
